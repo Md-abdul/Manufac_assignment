@@ -1,7 +1,15 @@
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
-import { theme } from "./theme";
 
-export default function App() {
-  return <MantineProvider theme={theme}>App</MantineProvider>;
+import AgricultureTable from "./Pages/AgricultureTable";
+import rawData from "../agriculture.json";
+
+function App() {
+  return (
+    <MantineProvider>
+      <AgricultureTable data={rawData} />
+    </MantineProvider>
+  );
 }
+
+export default App;
