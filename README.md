@@ -34,4 +34,4 @@ This project is a frontend application for analyzing agriculture data using Mant
    
 3. Start the Development Server:
    ```bash
-   npm run server     
+   npm run dev    
